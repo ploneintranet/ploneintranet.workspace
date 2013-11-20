@@ -1,5 +1,4 @@
 from setuptools import setup, find_packages
-import os
 
 version = '1.0'
 
@@ -28,6 +27,7 @@ setup(name='ploneintranet.workspace',
       install_requires=[
           'setuptools',
           'collective.workspace',
+          'plone.api',
           'plone.app.dexterity [grok]',
           'plone.namedfile [blobs]',
           # -*- Extra requirements: -*-
