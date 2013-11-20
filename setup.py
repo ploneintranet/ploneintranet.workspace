@@ -7,7 +7,7 @@ setup(name='ploneintranet.workspace',
       version=version,
       description="A Workspace implementation for ploneintranet",
       long_description=open("README.txt").read() + "\n" +
-                       open(os.path.join("docs", "HISTORY.txt")).read(),
+                       open("CHANGES.txt").read(),
       # Get more strings from
       # http://pypi.python.org/pypi?%3Aaction=list_classifiers
       classifiers=[
@@ -20,16 +20,17 @@ setup(name='ploneintranet.workspace',
       author_email='',
       url='http://svn.plone.org/svn/collective/',
       license='GPL',
-      packages=find_packages(exclude=['ez_setup']),
+      packages=find_packages('src'),
+      package_dir={'': 'src'},
       namespace_packages=['ploneintranet'],
       include_package_data=True,
       zip_safe=False,
       install_requires=[
           'setuptools',
-          'plone.app.dexterity [grok]',
-          'plone.namedfile [blobs]',
+          'collective.workspace',
           # -*- Extra requirements: -*-
       ],
+      extras_require={'test': ['plone.app.testing[robot]>=4.2.2']},
       entry_points="""
       # -*- Entry points: -*-
       [z3c.autoinclude.plugin]
@@ -39,6 +40,5 @@ setup(name='ploneintranet.workspace',
       # addcontent support from paster and before you distribute
       # your package.
       setup_requires=[],
-      paster_plugins = ["ZopeSkel"],
 
       )
