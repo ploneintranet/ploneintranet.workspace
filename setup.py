@@ -28,6 +28,8 @@ setup(name='ploneintranet.workspace',
       install_requires=[
           'setuptools',
           'collective.workspace',
+          'plone.app.dexterity [grok]',
+          'plone.namedfile [blobs]',
           # -*- Extra requirements: -*-
       ],
       extras_require={'test': ['plone.app.testing[robot]>=4.2.2']},
