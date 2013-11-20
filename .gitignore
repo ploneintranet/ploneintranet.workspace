@@ -27,7 +27,9 @@ fake-eggs/
 parts/
 dist/
 var/
-
+include/
+lib/
+src/collective.workspace
 
 
 # OSX
