@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Workspace Policy</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap-theme.min.css">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
+
+    <link href="slider/css/slider.css" rel="stylesheet">
+    <style type="text/css">
+     .well p {
+       margin-top: 1em;
+     }
+     .value {
+       font-weight: bold;
+     }
+     .secondary {
+       color: #aaa;
+     }
+     body {
+       padding-bottom: 5em;
+     }
+     .headers {
+       font-weight: bold;
+       padding-bottom: 5px;
+       border-bottom: solid 1px #ddd;
+       margin-bottom: 5px;
+       
+     }
+     #exceptions span,
+     #exceptions button {
+      margin: 5px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Workspace Policy Settings</h1>
+
+      <div class="row">
+        <div class="col-md-8">
+          <div class="well" id="accesspolicy">
+            <h2>Access Policy</h2>
+            <p>External visibility of the workspace for users who are not workspace members.</p>
+            <input type="text" class="slider" value="0" id="" >
+            <p class=""><span class="value">Value</span>: <span class="primary description">Explanatory text</span><br />
+            <span class="secondary description">Explanatory text</span></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-8">
+          <div class="well" id="memberpolicy">
+            <h2>Membership Policy</h2>
+            <p>How open is the workspace to accepting new workspace members.</p>
+            <input type="text" class="slider" value="0" id="" >
+            <p class=""><span class="value">Value</span>: <span class="primary description">Explanatory text</span><br />
+            <span class="secondary description">Explanatory text</span></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-8">
+          <div class="well" id="contentpolicy">
+            <h2>Content Policy</h2>
+            <p>What can workspace members do within the workspace.</p>
+            <input type="text" class="slider" value="0" id="" >
+            <p class=""><span class="value">Value</span>: <span class="primary description">Explanatory text</span><br />
+            <span class="secondary description">Explanatory text</span></p>
+          </div>
+        </div>
+      </div>
+
+      <div id="exceptions">
+        
+        <h3>Content Policy Exceptions</h3>
+        <p>You can manage per-user content permissions in the <a href="@@sharing">advanced sharing settings</a> page.</p>
+        <p>The following users have permissions that differ from the default content policy <span class="text-success">"Produce"</span>:</p>
+        
+        <div class="row headers">
+          <div class="col-md-3">
+            User
+          </div>
+          <div class="col-md-1">
+            Reader
+          </div>
+          <div class="col-md-1">
+            Contributor
+          </div>
+          <div class="col-md-1">
+            Reviewer
+          </div>
+          <div class="col-md-1">
+            Editor
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-3">
+            <span class="user">Arnold Alphamale</span>
+          </div>
+          <div class="col-md-1">
+            <span class="glyphicon glyphicon-ok-circle text-success" />
+          </div>
+          <div class="col-md-1">
+            <span class="glyphicon glyphicon-ok-circle text-success" />
+          </div>
+          <div class="col-md-1">
+            <span class="glyphicon glyphicon-plus-sign text-warning" />
+          </div>
+          <div class="col-md-1">
+            <span class="glyphicon glyphicon-plus-sign text-warning" />
+          </div>
+          <div class="col-md-1">
+            <button type="button" class="btn btn-default btn-xs">Remove exception</button>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-3">
+            <span class="user">Betty Blabbermouth</span>
+          </div>
+          <div class="col-md-1">
+            <span class="glyphicon glyphicon-ok-circle text-success" />
+          </div>
+          <div class="col-md-1">
+            <span class="glyphicon glyphicon-minus-sign text-danger" />
+          </div>
+          <div class="col-md-1">
+            <span class="glyphicon glyphicon-ban-circle text-muted" />
+          </div>
+          <div class="col-md-1">
+            <span class="glyphicon glyphicon-ban-circle text-muted" />
+          </div>
+          <div class="col-md-1">
+            <button type="button" class="btn btn-default btn-xs">Remove exception</button>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-3">
+            <span class="user">Terry Trollson</span>
+          </div>
+          <div class="col-md-1">
+            <span class="glyphicon glyphicon-minus-sign text-danger" />
+          </div>
+          <div class="col-md-1">
+            <span class="glyphicon glyphicon-minus-sign text-danger" />
+          </div>
+          <div class="col-md-1">
+            <span class="glyphicon glyphicon-ban-circle text-muted" />
+          </div>
+          <div class="col-md-1">
+            <span class="glyphicon glyphicon-ban-circle text-muted" />
+          </div>
+          <div class="col-md-1">
+            <button type="button" class="btn btn-default btn-xs">Remove exception</button>
+          </div>
+      </div>
+      
+    </div>
+
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="slider/js/bootstrap-slider.js"></script>
+    <script>
+     $(function(){
+       var opts = {"accesspolicy": {0: {"value": "Secret", 
+                                        "primary": "The workspace is hidden from outsiders.",
+                                        "secondary": "Only workspace members know it exists."},
+                                    1: {"value": "Private",
+                                        "primary": "The workspace is inaccessible to outsiders.",
+                                        "secondary": "Only workspace members can access the workspace."},
+                                    2: {"value": "Open",
+                                        "primary": "The workspace can be explored by outsiders.",
+                                        "secondary": "Outsiders can browse but not actively participate."}
+                                    },
+                   "memberpolicy": {0: {"value": "Admin-managed", 
+                                        "primary": "Only administrators can add workspace members.",
+                                        "secondary": ""},
+                                    1: {"value": "Team-managed",
+                                        "primary": "Workspace members can add outsiders as a workspace member.",
+                                        "secondary": ""},
+                                    2: {"value": "Self-managed",
+                                        "primary": "Outsiders can self-join becoming a workspace member.",
+                                        "secondary": ""}
+                                    },
+                   "contentpolicy": {0: {"value": "Consume", 
+                                        "primary": "Workspace members can read content.",
+                                        "secondary": "Workspace members cannot add, publish or edit content."},
+                                    1: {"value": "Produce",
+                                        "primary": "Workspace members can read and add content.",
+                                        "secondary": "Workspace members cannot publish or edit content."},
+                                    2: {"value": "Publish",
+                                        "primary": "Workspace members can read, add and publish content.",
+                                        "secondary": "Workspace members cannot edit other member's content."},
+                                    3: {"value": "Moderate",
+                                        "primary": "Workspace members can read, add, publish and edit content.",
+                                        "secondary": "There's nothing they cannot do."}
+                                    }
+                   };
+
+       function setchosen(sliderid) {
+         $('#' +sliderid + ' .value').text(opts[sliderid][$('#' +sliderid + ' input').val()]['value']);
+         $('#' +sliderid + ' .primary').text(opts[sliderid][$('#' +sliderid + ' input').val()]['primary']);
+         $('#' +sliderid + ' .secondary').text(opts[sliderid][$('#' +sliderid + ' input').val()]['secondary']);
+       }
+       
+       $('#accesspolicy .slider').slider({
+         min: 0,
+         max: 2,
+         step: 1,
+         value: 0,
+         formater: function(value) {
+           return opts["accesspolicy"][value]["value"];
+         },
+       }).on('slide', function(ev){
+         setchosen("accesspolicy");
+       });
+
+       $('#memberpolicy .slider').slider({
+         min: 0,
+         max: 2,
+         step: 1,
+         value: 0,
+         formater: function(value) {
+           return opts["memberpolicy"][value]["value"];
+         },
+       }).on('slide', function(ev){
+         setchosen("memberpolicy");
+       });
+
+       $('#contentpolicy .slider').slider({
+         min: 0,
+         max: 3,
+         step: 1,
+         value: 0,
+         formater: function(value) {
+           return opts["contentpolicy"][value]["value"];
+         },
+       }).on('slide', function(ev){
+         setchosen("contentpolicy");
+       });
+
+       // initial settings
+       setchosen("accesspolicy");
+       setchosen("memberpolicy");
+       setchosen("contentpolicy");
+     });
+
+    </script>
+  </body>
+</html>
