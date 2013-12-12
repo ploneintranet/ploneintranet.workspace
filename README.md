@@ -166,7 +166,7 @@ performant and extremely fine-grained security mechanism in the back-end.
 * Groups map Roles to users.
   For example: All users in group Readers get role Reader.
 
-* Meta Groups map Roles to Groups.
+* Meta Groups map Personas to Groups.
   For example: All Participants are in the group Publisher.
 
 There's some details and intricacies here that are worth highlighting.
