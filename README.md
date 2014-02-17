@@ -3,6 +3,8 @@
 ploneintranet.workspace
 =======================
 
+*Please note that this is a work-in-progress package. The below details the aims. Implementation is ongoing.*
+
 This package provides a Workspace container that can be used as a project space,
 team space or community space. 
 
