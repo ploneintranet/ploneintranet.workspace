@@ -1,4 +1,5 @@
 [![Build Status](https://api.travis-ci.org/ploneintranet/ploneintranet.workspace.png)](https://travis-ci.org/ploneintranet/ploneintranet.workspace)
+[![Coverage Status](https://coveralls.io/repos/ploneintranet/ploneintranet.workspace/badge.png)](https://coveralls.io/r/ploneintranet/ploneintranet.workspace)
 
 ploneintranet.workspace
 =======================
