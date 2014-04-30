@@ -61,23 +61,20 @@ External Visibility
 
 External Visibility configures the permissions on the Workspace
 for Guests, i.e. users who are not Participants in the Workspace.
+Participants can see and access the Workspace.
 
 * Secret
 
 Secret Workspaces cannot be seen or accessed by Guests.
-Only Participants can see and access a Secret Workspace.
 
 * Private
 
 Private Workspaces can be seen, but not be accessed by Guests.
-Participants can see and access Private Workspaces.
 
 * Open
 
 Open Workspaces can be seen and accessed by Guests.
 However Guests can only see, not respond to content in the Workspace.
-Participants on the other hand can not only see and access
-the Workspace but also interact with it's content.
 
 See detailed security notes below for implementation hints.
 
