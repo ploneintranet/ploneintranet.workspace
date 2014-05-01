@@ -6,7 +6,7 @@ setup(name='ploneintranet.workspace',
       version=version,
       description="A Workspace implementation for ploneintranet",
       long_description=open("README.txt").read() + "\n" +
-                       open("CHANGES.txt").read(),
+                  open("CHANGES.txt").read(),
       # Get more strings from
       # http://pypi.python.org/pypi?%3Aaction=list_classifiers
       classifiers=[
@@ -36,6 +36,9 @@ setup(name='ploneintranet.workspace',
           'test': [
               'plone.app.testing',
               'plone.app.robotframework',
+          ],
+          'develop': [
+              'Sphinx',
           ],
       },
       entry_points="""
