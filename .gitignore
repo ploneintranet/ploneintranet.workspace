@@ -30,7 +30,7 @@ var/
 include/
 lib/
 src/collective.workspace
-
+/docs/html/
 
 # OSX
 .DS_Store
