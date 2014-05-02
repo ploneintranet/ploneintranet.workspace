@@ -31,6 +31,8 @@ include/
 lib/
 src/collective.workspace
 /docs/html/
+htmlcov
+.coverage
 
 # OSX
 .DS_Store
