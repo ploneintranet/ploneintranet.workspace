@@ -1,7 +1,7 @@
 ploneintranet.workspace
 =======================
 
-* `Documentation @ api.plone.org <http://ploneintranetworkspace.readthedocs.org>`_
+* `Documentation @ RTD <http://ploneintranetworkspace.readthedocs.org>`_
 * `Source code @ GitHub <http://github.com/ploneintranet/ploneintranet.workspace>`_
 * `Continuous Integration @ Travis CI <http://travis-ci.org/ploneintranet/ploneintranet.workspace>`_
 * `Code Coverage @ Coveralls.io <http://coveralls.io/r/ploneintranet/ploneintranet.workspace>`_
