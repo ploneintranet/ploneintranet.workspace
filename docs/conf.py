@@ -11,4 +11,7 @@ extensions = [
 ]
 master_doc = 'index'
 
+# Readme is manually included in index
+exclude_patterns = ['README.rst', ]
+
 language = 'en'
