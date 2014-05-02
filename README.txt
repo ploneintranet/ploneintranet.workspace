@@ -1,4 +1,0 @@
-Introduction
-============
-
-See README.md
