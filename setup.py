@@ -30,6 +30,7 @@ setup(name='ploneintranet.workspace',
           'plone.api',
           'plone.app.dexterity [grok]',
           'plone.namedfile [blobs]',
+          'Products.CMFPlacefulWorkflow',
           # -*- Extra requirements: -*-
       ],
       extras_require={
