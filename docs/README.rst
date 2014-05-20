@@ -23,7 +23,7 @@ functionality is retained as "advanced" settings to enable per-user
 exceptions to the default security settings.
 
 Current Status
-=======
+==============
 
 With this package installed, you get a dexterity content type 'workspace',
 which has the collective.workspace behaviour applied. This will enable
@@ -36,6 +36,6 @@ can access content within your workspace. These can be adjusted via
 the policy tab.
 
 TODO
-=======
+====
 
 * The ability to invite users to workspaces
