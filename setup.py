@@ -31,6 +31,7 @@ setup(name='ploneintranet.workspace',
           'plone.app.dexterity [grok]',
           'plone.namedfile [blobs]',
           'Products.CMFPlacefulWorkflow',
+          'ploneintranet.invitations',
           # -*- Extra requirements: -*-
       ],
       extras_require={
