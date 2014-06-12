@@ -30,6 +30,7 @@ var/
 include/
 lib/
 src/collective.workspace
+src/ploneintranet.invitations
 src/plone.api
 /docs/html/
 htmlcov
