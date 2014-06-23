@@ -198,7 +198,7 @@ Consistency
 -----------
 
 We've audited the settings architecture described above for possible
-inconsistent settings. These should be caught by some Javascript logic
+inconsistent settings. These should be caught by some logic
 in the configuration policy view.
 
 -  A Secret Workspace cannot be Self-managed
