@@ -1,6 +1,11 @@
 ploneintranet.workspace
 =======================
 
+.. image:: https://travis-ci.org/ploneintranet/ploneintranet.workspace.svg?branch=master
+    :target: https://travis-ci.org/ploneintranet/ploneintranet.workspace
+.. image:: https://coveralls.io/repos/ploneintranet/ploneintranet.workspace/badge.png?branch=master
+  :target: https://coveralls.io/r/ploneintranet/ploneintranet.workspace?branch=master
+
 * `Documentation @ RTD <http://ploneintranetworkspace.readthedocs.org>`_
 * `Source code @ GitHub <http://github.com/ploneintranet/ploneintranet.workspace>`_
 * `Continuous Integration @ Travis CI <http://travis-ci.org/ploneintranet/ploneintranet.workspace>`_
