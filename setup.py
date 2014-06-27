@@ -27,7 +27,7 @@ setup(name='ploneintranet.workspace',
       install_requires=[
           'setuptools',
           'collective.workspace',
-          'plone.api',
+          'plone.api>=1.2.1',
           'plone.app.dexterity [grok]',
           'plone.namedfile [blobs]',
           'Products.CMFPlacefulWorkflow',
