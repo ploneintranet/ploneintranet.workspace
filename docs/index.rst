@@ -1,24 +1,7 @@
-Plone Intranet Workspace
-========================
-
-A workspace solution for intranets.
-
 .. include:: README.rst
 
-.. toctree::
-   :maxdepth: 1
+Appendices
+==========
 
-Architecture Documentation
-==========================
-
-.. toctree::
-    :maxdepth: 2
-
-    architecture.rst
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
+* :doc:`architecture`
 * :ref:`search`

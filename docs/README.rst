@@ -1,3 +1,4 @@
+=======================
 ploneintranet.workspace
 =======================
 
@@ -27,20 +28,30 @@ access, and understand, the sharing tab in Plone. The sharing tab and
 functionality is retained as "advanced" settings to enable per-user
 exceptions to the default security settings.
 
-Current Status
-==============
+Installation
+============
+
+* Add ploneintranet.workspace to your eggs and re-buildout
+* Activate the 'Plone Intranet: Workspace' add-on
+
+Usage
+=====
 
 With this package installed, you get a dexterity content type 'workspace',
 which has the collective.workspace behaviour applied. This will enable
-the 'roster' tab, which will enable an admin to add members and workspace
-admins to the workspace.
+the 'roster' and 'policies' tabs.
+
+The policies tab allows the creator and other workspace admins to set the
+external visibility, joining and participant policies for the workspace. These
+govern the openness of the workspace in terms of how free intranet users are to
+join and add content.
+
+The roster tab lists all the current members of the workspace and allows users
+to add or invite new members depending on the current join policy. It also
+allows admins to delegate management of the workspace to other members by
+making them a 'workspace admin'
 
 Any content added to the workspace will have the ploneintranet content
 workflow applied, that will apply further restrictions on which users
 can access content within your workspace. These can be adjusted via
 the policy tab.
-
-TODO
-====
-
-* The ability to invite users to workspaces
