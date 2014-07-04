@@ -41,6 +41,7 @@ setup(name='ploneintranet.workspace',
           ],
           'develop': [
               'Sphinx',
+              'zest.releaser',
           ],
       },
       entry_points="""
