@@ -6,6 +6,7 @@ setup(name='ploneintranet.workspace',
       version=version,
       description="A Workspace implementation for ploneintranet",
       long_description=open("README.rst").read() + "\n" +
+                  open("CONTRIBUTORS.txt").read() + "\n" +
                   open("CHANGES.txt").read(),
       # Get more strings from
       # http://pypi.python.org/pypi?%3Aaction=list_classifiers
@@ -14,8 +15,8 @@ setup(name='ploneintranet.workspace',
           "Programming Language :: Python",
           "Topic :: Software Development :: Libraries :: Python Modules",
       ],
-      keywords='',
-      author='',
+      keywords='plone workspace collaboration intranet',
+      author='Plone Intranet Consortium',
       author_email='',
       url='https://github.com/ploneintranet/ploneintranet.workspace',
       license='GPL',
@@ -32,7 +33,6 @@ setup(name='ploneintranet.workspace',
           'plone.namedfile [blobs]',
           'Products.CMFPlacefulWorkflow',
           'ploneintranet.invitations',
-          # -*- Extra requirements: -*-
       ],
       extras_require={
           'test': [
@@ -48,9 +48,5 @@ setup(name='ploneintranet.workspace',
       [z3c.autoinclude.plugin]
       target = plone
       """,
-      # The next two lines may be deleted after you no longer need
-      # addcontent support from paster and before you distribute
-      # your package.
       setup_requires=[],
-
       )
