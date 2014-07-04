@@ -1,3 +1,4 @@
-- Matt Hamilton
-- Matthew Sital-Singh
-- Adam Forsythe-Cheasley
+- Ben Ackland, Guido Stevens, Matt Hamilton 
+  (Original architecture plan)
+- Adam Forsythe-Cheasley, Ben Cole, Matthew Sital-Singh, Rapolas Kaselis
+  (Initial implementation)
