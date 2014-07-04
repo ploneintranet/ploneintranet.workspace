@@ -1,5 +1,9 @@
 .. include:: README.rst
 
+.. include:: policies.rst
+
+.. include:: development.rst
+
 Appendices
 ==========
 

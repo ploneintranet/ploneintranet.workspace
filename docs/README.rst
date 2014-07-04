@@ -15,18 +15,9 @@ ploneintranet.workspace
 Summary
 =======
 
-This package provides a Workspace container that can be used as a
-project space, team space or community space.
+This package provides a 'workspace' container and content workflow working in conjunction to provide flexible levels of content access in a Plone site.
 
-At it's core, it's a Dexterity Container with
-`collective.workspace <https://github.com/collective/collective.workspace>`_
-behavior applied.
-
-On top of that, it provides a policy abstraction and user interface that
-enables intuitive management of security settings without having to
-access, and understand, the sharing tab in Plone. The sharing tab and
-functionality is retained as "advanced" settings to enable per-user
-exceptions to the default security settings.
+It aims to provide a flexible team/community workspace solution, allow teams of users to communicate and collaborate effectively within their own area of an intranet. Plone's extensive permissions are distilled into a set of distinct policies that control who can access a workspace, who can join a workspace, and what users can do once they are part of a workspace.
 
 Installation
 ============
@@ -34,8 +25,8 @@ Installation
 * Add ploneintranet.workspace to your eggs and re-buildout
 * Activate the 'Plone Intranet: Workspace' add-on
 
-Usage
-=====
+Basic Usage
+===========
 
 With this package installed, you get a dexterity content type 'workspace',
 which has the collective.workspace behaviour applied. This will enable
@@ -53,5 +44,5 @@ making them a 'workspace admin'
 
 Any content added to the workspace will have the ploneintranet content
 workflow applied, that will apply further restrictions on which users
-can access content within your workspace. These can be adjusted via
-the policy tab.
+can access content within your workspace. 
+
