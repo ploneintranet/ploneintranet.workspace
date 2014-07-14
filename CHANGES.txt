@@ -6,7 +6,10 @@ Changelog
 
 - Only show custom sharing viewlet on a workspace
   [mattss]
-- Include participation policy description on sharing tab
+- Include full participation policy description on 
+  workspace sharing tab
+  [kaselis]
+- Show participation policy roles on workspace sharing tab
   [kaselis]
 - Unicode tests
   [wengole]
