@@ -62,3 +62,11 @@ What can members of the workspace do?
   - Members can create, edit and publish their own content
     *and* content created by others.
 
+Policy Scenarios
+================
+
+These policies are designed to be combined in ways that produce sensible policy scenarios. Some example use cases might be:
+
+* Open + Self-managed + Publishers = Community/Wiki
+* Open + Admin-managed + Consumers = Business Division/Department
+* Private + Team-managed + Publishers = Team
