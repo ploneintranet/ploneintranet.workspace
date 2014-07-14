@@ -17,7 +17,7 @@ Summary
 
 This package provides a 'workspace' container and content workflow working in conjunction to provide flexible levels of content access in a Plone site.
 
-It aims to provide a flexible team/community workspace solution, allow teams of users to communicate and collaborate effectively within their own area of an intranet. Plone's extensive permissions are distilled into a set of distinct policies that control who can access a workspace, who can join a workspace, and what users can do once they are part of a workspace.
+It aims to provide a flexible team/community workspace solution, allowing teams of users to communicate and collaborate effectively within their own area of an intranet. Plone's extensive permissions are distilled into a set of distinct policies that control who can access a workspace, who can join a workspace, and what users can do once they are part of a workspace.
 
 Installation
 ============
