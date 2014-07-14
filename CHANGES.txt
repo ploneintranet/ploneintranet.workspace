@@ -4,7 +4,12 @@ Changelog
 1.1 (unreleased)
 ----------------
 
-- Nothing changed yet.
+- Only show custom sharing viewlet on a workspace
+  [mattss]
+- Include participation policy description on sharing tab
+  [kaselis]
+- Unicode tests
+  [wengole]
 
 
 1.0 (2014-07-04)
