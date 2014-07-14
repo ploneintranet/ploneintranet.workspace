@@ -6,5 +6,4 @@
 Thanks also goes to:
 
 - David Glick
-  (`collective.workspace <https://pypi.python.org/pypi/collective.workspace>`_
-  a package without which this work would not have been possible)
+  (`collective.workspace <https://pypi.python.org/pypi/collective.workspace>`_)
