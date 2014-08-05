@@ -4,8 +4,8 @@ Changelog
 1.2 (unreleased)
 ----------------
 
-- Nothing changed yet.
-
+- Rename old importstep-handler marker from netsight-windowsauthplugin.
+  [fredvd]
 
 1.1 (2014-07-14)
 ----------------
