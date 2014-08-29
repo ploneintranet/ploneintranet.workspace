@@ -1,6 +1,6 @@
 - Ben Ackland, Guido Stevens, Matt Hamilton 
   (Original architecture plan)
-- Adam Forsythe-Cheasley, Ben Cole, Matthew Sital-Singh, Rapolas Kaselis
+- Adam Forsythe-Cheasley, Ben Cole, Matthew Sital-Singh, Rapolas Kaselis, Daniel Marks
   (Initial implementation)
 
 Thanks also goes to:
