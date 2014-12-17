@@ -32,6 +32,8 @@ setup(name='ploneintranet.workspace',
           'plone.app.dexterity [grok]',
           'plone.namedfile [blobs]',
           'Products.CMFPlacefulWorkflow',
+          'plonesocial.microblog',
+          'plonesocial.activitystream',
           'ploneintranet.invitations',
       ],
       extras_require={
