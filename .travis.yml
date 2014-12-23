@@ -4,7 +4,7 @@ install:
   - mkdir -p buildout-cache/downloads
   - python bootstrap.py -c travis.cfg -v 1.6.3
   - bin/buildout -N -t 3 -c travis.cfg
-script: 
+script:
   - bin/test
   - bin/flake8 src/ploneintranet
 after_success:
@@ -17,4 +17,6 @@ notifications:
 before_script:
   - export DISPLAY=:99.0
   - sh -e /etc/init.d/xvfb start
-
+cache:
+  directories:
+    - eggs
