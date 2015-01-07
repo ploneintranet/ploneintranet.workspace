@@ -2,15 +2,30 @@
 ploneintranet.workspace
 =======================
 
-.. image:: https://travis-ci.org/ploneintranet/ploneintranet.workspace.svg?branch=master
-    :target: https://travis-ci.org/ploneintranet/ploneintranet.workspace
-.. image:: https://coveralls.io/repos/ploneintranet/ploneintranet.workspace/badge.png?branch=master
-  :target: https://coveralls.io/r/ploneintranet/ploneintranet.workspace?branch=master
 
 * `Documentation @ RTD <http://ploneintranetworkspace.readthedocs.org>`_
 * `Source code @ GitHub <http://github.com/ploneintranet/ploneintranet.workspace>`_
-* `Continuous Integration @ Travis CI <http://travis-ci.org/ploneintranet/ploneintranet.workspace>`_
-* `Code Coverage @ Coveralls.io <http://coveralls.io/r/ploneintranet/ploneintranet.workspace>`_
+
+Build status
+------------
+
+Unit tests
+~~~~~~~~~~
+
+.. image:: https://travis-ci.org/ploneintranet/ploneintranet.workspace.svg?branch=master
+   :target: https://travis-ci.org/ploneintranet/ploneintranet.workspace
+.. image:: https://coveralls.io/repos/ploneintranet/ploneintranet.workspace/badge.png?branch=master
+   :target: https://coveralls.io/r/ploneintranet/ploneintranet.workspace?branch=master
+.. image:: http://jenkins.ploneintranet.net/buildStatus/icon?job=Plone%20Intranet%20Notifications
+    :target: http://jenkins.ploneintranet.net/job/Plone%20Intranet%20Notifications/
+
+Robot tests for Plone Intranet
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. image:: http://jenkins.ploneintranet.net/buildStatus/icon?job=Plone%20Intranet%20Suite%20Master
+    :target: http://jenkins.ploneintranet.net/job/Plone%20Intranet%20Suite%20Master/badge/
+
+
 
 Summary
 =======
