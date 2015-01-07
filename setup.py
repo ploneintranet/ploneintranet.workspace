@@ -27,6 +27,7 @@ setup(name='ploneintranet.workspace',
       zip_safe=False,
       install_requires=[
           'setuptools',
+          'Products.CMFPlacefulWorkflow',
           'collective.workspace',
           'plone.api>=1.2.1',
           'plone.app.dexterity [grok]',
@@ -38,6 +39,7 @@ setup(name='ploneintranet.workspace',
       ],
       extras_require={
           'test': [
+              'plone.app.contenttypes[test]',
               'plone.app.testing',
               'plone.app.robotframework',
           ],
