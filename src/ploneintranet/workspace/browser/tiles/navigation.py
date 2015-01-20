@@ -1,3 +1,5 @@
+from Acquisition._Acquisition import aq_parent
+from plone.memoize.view import memoize
 from zope.interface import Interface
 from zope.interface import implementer
 from zope.component import getMultiAdapter
@@ -7,6 +9,7 @@ from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
 from plone.app.layout.navigation.navtree import buildFolderTree
 from plone.app.layout.navigation.interfaces import INavtreeStrategy
 from Products.CMFPlone.browser.navtree import SitemapQueryBuilder
+from ploneintranet.workspace.workspacefolder import IWorkspaceFolder
 
 
 class INavigationTile(Interface):
@@ -33,16 +36,10 @@ class NavigationTile(Tile):
     index = ViewPageTemplateFile('templates/navigation.pt')
 
     def items(self):
-        # TODO: use transient tiles with schema and data manager here
-        root = self.request.form.get('root')
-        if root:
-            root = api.content.get(UID=root)
-        else:
-            root = self.context
-        queryBuilder = WorkspaceQueryBuilder(self.context, root)
+        queryBuilder = WorkspaceQueryBuilder(self.context, self.root)
         strategy = getMultiAdapter((self.context, None), INavtreeStrategy)
         strategy.showAllParents = False
-        strategy.rootPath = '/'.join(root.getPhysicalPath())
+        strategy.rootPath = '/'.join(self.root.getPhysicalPath())
 
         tree = buildFolderTree(
             self.context,
@@ -56,4 +53,46 @@ class NavigationTile(Tile):
         return self.index()
 
     def __call__(self):
+        # TODO: use transient tiles with schema and data manager here
+        root = self.request.form.get('root')
+        if root:
+            self.root = api.content.get(UID=root)
+        else:
+            self.root = self.context
         return self.render()
+
+    @memoize
+    def _parent(self):
+        return aq_parent(self.root)
+
+    def current_node_is_root(self):
+        """
+        Is the current node the root of the workspace?
+        """
+        return IWorkspaceFolder.providedBy(self.root)
+
+    def parent_title(self):
+        return self._parent().Title()
+
+    def non_folderish_item_uids(self):
+        # TODO: Better way of determining folderish?
+        return [x['UID'] for x in self.items() if x['portal_type'] is not 'Folder']
+
+    def folderish_item_uids(self):
+        # TODO: Better way of determining folderish?
+        return [x['UID'] for x in self.items() if x['portal_type'] is 'Folder']
+
+    def any_item(self):
+        """
+        For data-pat-depends condition, is any item selected
+        """
+        return ' or '.join([x['UID'] for x in self.items()])
+
+    def only_non_folderish(self):
+        """
+        For data-pat-depends condition, are only non folderish items checked
+        """
+        return '(%s) and not (%s)' % (
+            ' or '.join(self.non_folderish_item_uids()),
+            ' or '.join(self.folderish_item_uids())
+        )
