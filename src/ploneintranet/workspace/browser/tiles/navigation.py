@@ -76,7 +76,9 @@ class NavigationTile(Tile):
 
     def non_folderish_item_uids(self):
         # TODO: Better way of determining folderish?
-        return [x['UID'] for x in self.items() if x['portal_type'] is not 'Folder']
+        return [
+            x['UID'] for x in self.items() if x['portal_type'] is not 'Folder'
+        ]
 
     def folderish_item_uids(self):
         # TODO: Better way of determining folderish?
