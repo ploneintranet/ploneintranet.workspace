@@ -22,7 +22,20 @@
                     <div id="activity-stream" data-tile="./@@activitystream.tile" tal:attributes="data-tile string:${workspace_url}/@@activitystream.tile"></div>
                 </div>
 
-                <aside class="sidebar left tagging-off" id="sidebar" tal:attributes="data-tile string:${workspace_url}/@@sidebar.tile">
+                <aside class="sidebar left tagging-off" id="sidebar">
+                    <div hidden id="more-menu">
+                        <ul class="menu">
+                            <li>
+                                <a class="icon-document" href="#">Paste document(s)</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div id="sidebar-content" class="pat-stacks">
+                        <div id="workspace-documents" tal:attributes="data-tile string:${workspace_url}/@@navigation.tile" />
+                        <div id="workspace-events" tal:attributes="data-tile string:${workspace_url}/@@events.tile" />
+                        <div id="workspace-about" tal:attributes="data-tile string:${workspace_url}/@@about.tile" />
+                    </div>
                 </aside>
 
             </div>
