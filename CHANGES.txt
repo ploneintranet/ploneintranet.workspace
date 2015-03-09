@@ -8,13 +8,15 @@ Changelog
   [fredvd]
 - Added WorkspaceContainer content type
   [wengole]
+- Implemented Sidebar documents, events, todos and settings, added robot tests
+  [deroiste, giacomos, pilz, ckirchhoff]
 
 1.1 (2014-07-14)
 ----------------
 
 - Only show custom sharing viewlet on a workspace
   [mattss]
-- Include full participation policy description on 
+- Include full participation policy description on
   workspace sharing tab
   [kaselis]
 - Show participation policy roles on workspace sharing tab
