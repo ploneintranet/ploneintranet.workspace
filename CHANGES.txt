@@ -8,7 +8,7 @@ Changelog
   [fredvd]
 - Added WorkspaceContainer content type
   [wengole]
-- Implemented Sidebar documents, events, todos and settings
+- Implemented Sidebar documents, events, todos and settings, added robot tests
   [deroiste, giacomos, pilz, ckirchhoff]
 
 1.1 (2014-07-14)
