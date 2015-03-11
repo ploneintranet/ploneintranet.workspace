@@ -43,6 +43,7 @@ setup(name='ploneintranet.workspace',
       ],
       extras_require={
           'test': [
+              'mock',
               'plone.app.contenttypes[test]',
               'plone.app.testing',
               'plone.app.robotframework',
