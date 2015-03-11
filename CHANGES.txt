@@ -4,6 +4,8 @@ Changelog
 1.2 (unreleased)
 ----------------
 
+- Add tests for ploneintranet.theme (to be moved there in time)
+  [pbauer, khink]
 - Rename old importstep-handler marker from netsight-windowsauthplugin.
   [fredvd]
 - Added WorkspaceContainer content type
