@@ -48,6 +48,7 @@ setup(name='ploneintranet.workspace',
               'plone.app.testing',
               'plone.app.robotframework',
               'ploneintranet.theme',
+              'ploneintranet.docconv.client',
           ],
           'develop': [
               'Sphinx',
