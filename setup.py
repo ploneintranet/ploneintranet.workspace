@@ -47,6 +47,7 @@ setup(name='ploneintranet.workspace',
               'plone.app.contenttypes[test]',
               'plone.app.testing',
               'plone.app.robotframework',
+              'ploneintranet.theme',
           ],
           'develop': [
               'Sphinx',
